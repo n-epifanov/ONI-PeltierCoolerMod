@@ -1,23 +1,12 @@
-# ONI-ExampleMod
-Sample Visual Studio solution to help you started with a new mod for Oxygen not Included.
 
-Requirements
-------------
-* .NET Framework 3.5
-* Visual Studio 2017
+Adds a new building Peltier Cooler it cools down one tile and heats up another on opposite sides.
+Research "HVAC" tech and it'll show up under "Utilities".
+Was supposed to go with Steam Turbine, single Peltier cooler is able to provide heat for one Steam Turbine (2.5kW heat transfer rate). But ST turned out
+to be too buggy, occassionally it starts to pass through all the input steam, which makes cooler+turbine set inefficient.
 
-Getting started
----------------
-* Do the "Installation" part of https://github.com/javisar/ONI-Modloader
-* Copy the following files from ONI's `OxygenNotIncluded_Data\Managed` folder to this mod's `\lib\`:
-   * `Assembly-CSharp.dll`
-   * `Assembly-CSharp-firstpass.dll`
-   * `Assembly-UnityScript-firstpass.dll`
-   * `UnityEngine.dll`
-   * `UnityEngine.UI.dll`
-* Open solution in Visual Studio
-* Open project's `Properties`:
-   * Rename `Assembly name` and `Default Namespace`
-   * Click `Assembly Information...` and make renames there too
-* Build (.dll will get copied to ONI `Mods` dir);
-* Run the game.
+-120 1k
+
+* Deconstruct buildings and cancel plans of Peltier coolers.
+* Save game.
+* Remove mod's DLL.
+
